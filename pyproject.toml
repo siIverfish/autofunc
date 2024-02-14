@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argrecurse"
+version = "0.0.2"
+authors = [
+  { name="Ivan Z", email="abc617fz3@gmail.com" },
+]
+description = "Provides the @auto wrapper (`from autofunc import auto`), which allows calling functions with the syntax e.g. `(foo)(1)(2)(c=3)` instead of `foo(1, 2, c=3)`. Also recurses, so `(foo)(foo)(1)(2)(3)(foo)(4)(5)(6)(7)` is viable."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/siiverfish/autofunc"
+Issues = "https://github.com/siiverfish/autofunc/issues"
